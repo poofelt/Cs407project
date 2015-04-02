@@ -1,39 +1,39 @@
 package com.example.paul.cs407project;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
 
+public class MainActivity extends Activity implements OnClickListener{
 
-public class MainActivity extends ActionBarActivity {
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //click listeners
+        View todoButton = findViewById(R.id.todo_button);
+        todoButton.setOnClickListener(this);
+        View calendarButton = findViewById(R.id.calendar_button);
+        calendarButton.setOnClickListener(this);
+        View notificationsButton = findViewById(R.id.notifs_button);
+        notificationsButton.setOnClickListener(this);
+        View sharedlistsButton = findViewById(R.id.shared_button);
+        sharedlistsButton.setOnClickListener(this);
+        View myfriendsButton = findViewById(R.id.friends_button);
+        myfriendsButton.setOnClickListener(this);
     }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public void onClick(View v){
+        switch (v.getId()){
+            case R.id.notifs_button:
+                Intent Notification = new Intent(this, Notifications.class);
+                startActivity(Notification);
+                break;
+            //Add other buttons here
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
 }
+
+
+

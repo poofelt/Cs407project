@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">SyncUs</string>
+    <string name="main_title">Welcome to SyncUs</string>
+    <string name="my_todos_label">My Todos</string>
+    <string name="my_Calendar_label">My Calendar</string>
+    <string name="Notifications_label">Notifications</string>
+    <string name="Shared_Lists_label">Shared Lists</string>
+    <string name="My_friends_label">My Friends</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="notifs_title">Notifications</string>
+    <string name="notifs_text">\
+Hey omg
+whats up
+lets do this
+    </string>
 
-    <string name="app_name">Cs407project</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
 
 </resources>
