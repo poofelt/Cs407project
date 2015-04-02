@@ -14,6 +14,10 @@ Hey omg
 whats up
 lets do this
     </string>
+    <string name="title_activity_todos">Todos</string>
+
+    <string name="Todo_title">My Todos!</string>
+
 
 
 </resources>

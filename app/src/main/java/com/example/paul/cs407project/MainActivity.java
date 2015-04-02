@@ -29,6 +29,11 @@ public class MainActivity extends Activity implements OnClickListener{
                 Intent Notification = new Intent(this, Notifications.class);
                 startActivity(Notification);
                 break;
+            case R.id.todo_button:
+                Intent Todo = new Intent(this, Todos.class);
+                startActivity(Todo);
+                break;
+
             //Add other buttons here
         }
     }
