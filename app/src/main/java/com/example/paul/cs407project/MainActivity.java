@@ -8,6 +8,9 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity implements OnClickListener{
 
+    public static final int images=0x7f020001;
+    public static final int splash=0x7f030001;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
