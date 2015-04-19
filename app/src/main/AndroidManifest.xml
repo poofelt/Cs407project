@@ -20,6 +20,10 @@
             android:name=".Notifications"
             android:label="@string/notifs_title" >
         </activity>
+        <activity
+            android:name=".Todos"
+            android:label="@string/title_activity_todos" >
+        </activity>
     </application>
 
 </manifest>
