@@ -1,19 +1,20 @@
 package com.example.paul.cs407project;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-    public static final int images=0x7f020001;
-    public static final int splash=0x7f030001;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         //click listeners
         View todoButton = findViewById(R.id.todo_button);
         todoButton.setOnClickListener(this);

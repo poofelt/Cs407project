@@ -18,12 +18,7 @@
         <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your invitation code: XXXX"
-                android:layout_marginBottom="25dip"
-                android:textSize="24.5sp"/>
+
 
             <EditText
                 android:layout_height="wrap_content"
@@ -34,11 +29,30 @@
                 android:maxLines="1">
             </EditText>
 
+            <EditText
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:id="@+id/name"
+                android:hint="Your Name"
+                android:maxLines="1">
+            </EditText>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:id="@+id/title"
+                android:hint="title"
+                android:maxLines="1">
+            </EditText>
+
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Get started"
+                android:text="Sign up"
+                android:id="@+id/sign_up"
                 android:onClick="login"/>
 
 
