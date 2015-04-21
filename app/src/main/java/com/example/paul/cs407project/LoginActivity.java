@@ -1,19 +1,9 @@
 package com.example.paul.cs407project;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
-
-import com.example.paul.cs407project.Model.Backend;
-import com.example.paul.cs407project.Model.User;
-
-import java.util.List;
 
 
 /**
@@ -30,11 +20,11 @@ public class LoginActivity extends Activity {
     }
 
     public void login(View view) {
-        //Intent intent = new Intent(this, LoginActivity2.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, LoginActivity2.class);
+        startActivity(intent);
     }
 
-    private void login(String name, String title) {
+ /**   private void login(String name, String title) {
         final String TAG = “LOGIN_ACTIVITY”;
         final Context currContext = this;
        // Log.d(TAG, "Attempting to login with email: " + email + " password: " + password);
@@ -88,7 +78,7 @@ public class LoginActivity extends Activity {
                 });
             }
         });
-    }
+    }*/
 }
 
 

@@ -1,11 +1,13 @@
 package com.example.paul.cs407project.Model;
 
+import com.orm.SugarRecord;
+
 import java.util.Date;
 
 /**
  * Created by ayza91 on 4/18/15.
  */
-public class Friend {
+public class Friend extends SugarRecord<Friend> {
     public int backendId;
 
     public String name;
