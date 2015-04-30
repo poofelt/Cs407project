@@ -86,7 +86,7 @@
             android:label="@string/log_in"
             android:launchMode="singleTop" >
             <meta-data
-                android:name="com.example.paul.cs407project.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
                 android:value="true" />
         </activity>
 
