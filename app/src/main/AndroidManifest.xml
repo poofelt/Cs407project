@@ -22,13 +22,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="15"
         android:targetSdkVersion="19" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -44,7 +44,8 @@
         </activity>
         <activity
             android:name=".Todos"
-            android:label="@string/title_activity_todos" >
+            android:label="@string/title_activity_todos"
+            >
         </activity>
 
         <service android:name="com.parse.PushService" />
@@ -75,12 +76,20 @@
                 <category android:name="com.example.paul.cs407project" />
             </intent-filter>
         </receiver>
-
-
         <activity
             android:name=".NewTodoActivity"
             android:label="@string/title_activity_new_todo" >
         </activity>
+
+        <activity
+            android:name="com.example.paul.cs407project.ParseLoginActivity"
+            android:label="@string/log_in"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="com.example.paul.cs407project.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true" />
+        </activity>
+
     </application>
 
 </manifest>

@@ -138,6 +138,11 @@ public class Todos extends Activity {
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.todo_list, menu);
+        return true;
+    }
 
 
     @Override
@@ -177,13 +182,16 @@ public class Todos extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         super.onPrepareOptionsMenu(menu);
         boolean realUser = !ParseAnonymousUtils.isLinked(ParseUser
                 .getCurrentUser());
-        menu.findItem(R.id.action_login).setVisible(!realUser);
-        menu.findItem(R.id.action_logout).setVisible(realUser);
+
+            menu.findItem(R.id.action_login).setVisible(!realUser);
+            menu.findItem(R.id.action_logout).setVisible(realUser);
+
         return true;
     }
 
