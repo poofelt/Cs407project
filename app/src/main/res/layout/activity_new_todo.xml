@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="@string/title_activity_new_todo" />
+
+    <EditText
+        android:id="@+id/todo_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="30dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button_label" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button_label"
+        android:visibility="invisible" />
+
+</LinearLayout>
