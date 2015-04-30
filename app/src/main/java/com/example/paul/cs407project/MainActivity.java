@@ -20,18 +20,12 @@ import java.util.Map;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-    public static final String TODO_GROUP_NAME = "ALL_TODOS";
+
 
     protected void onCreate(Bundle savedInstanceState) {
 
-        ParseObject.registerSubclass(Todo.class);
-        Parse.enableLocalDatastore(getApplicationContext());
-        Parse.initialize(this, "S853VeY0ISR12ujFxD6vAN2CL1x1yzRDCSXSOtq1", "g4XHz7D1WubgNX8EUD9EouHdVHqgbGTmi8DKaq75");
-        ParseUser.enableAutomaticUser();
-        ParseACL defaultACL = new ParseACL();
-        ParseACL.setDefaultACL(defaultACL, true);
-
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         //click listeners
         View todoButton = findViewById(R.id.todo_button);

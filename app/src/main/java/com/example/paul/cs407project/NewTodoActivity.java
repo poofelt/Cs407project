@@ -66,7 +66,7 @@ public class NewTodoActivity extends Activity {
                 todo.setTitle(todoText.getText().toString());
                 todo.setDraft(true);
                 todo.setAuthor(ParseUser.getCurrentUser());
-                todo.pinInBackground(MainActivity.TODO_GROUP_NAME,
+                todo.pinInBackground(SyncUsApplication.TODO_GROUP_NAME,
                         new SaveCallback() {
 
                             @Override

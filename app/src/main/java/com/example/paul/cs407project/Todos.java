@@ -171,7 +171,7 @@ public class Todos extends Activity {
             todoListAdapter.clear();
             // Unpin all the current objects
             ParseObject
-                    .unpinAllInBackground(MainActivity.TODO_GROUP_NAME);
+                    .unpinAllInBackground(SyncUsApplication.TODO_GROUP_NAME);
         }
 
         if (item.getItemId() == R.id.action_login) {
@@ -210,7 +210,7 @@ public class Todos extends Activity {
                 // server.
 
                 ParseQuery<Todo> query = Todo.getQuery();
-                query.fromPin(MainActivity.TODO_GROUP_NAME);
+                query.fromPin(SyncUsApplication.TODO_GROUP_NAME);
                 query.whereEqualTo("isDraft", true);
                 query.findInBackground(new FindCallback<Todo>() {
                     public void done(List<Todo> todos, ParseException e) {
